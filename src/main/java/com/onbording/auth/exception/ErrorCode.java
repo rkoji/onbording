@@ -8,7 +8,10 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum ErrorCode {
-	EXAMPLE_ERRORCODE(HttpStatus.NOT_FOUND,"예시 코드");
+
+	USERNAME_ALREADY_EXISTS(HttpStatus.CONFLICT, "존재하는 아이디 입니다."),
+	PASSWORD_REQUIRED(HttpStatus.BAD_REQUEST, "비밀번호는 필수 입력 항목입니다.");
+
 	private final HttpStatus httpStatus;
 	private final String message;
 }
