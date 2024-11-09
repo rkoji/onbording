@@ -9,4 +9,6 @@ import com.onbording.auth.entity.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	Boolean existsByUsername(String username);
+
+	Optional<User> findByUsername(String username);
 }

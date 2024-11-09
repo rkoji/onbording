@@ -47,4 +47,12 @@ public class User {
 			.roles(List.of(UserRole.ROLE_USER))
 			.build();
 	}
+
+	public static User createUser(String username,String password,String role) {
+		return User.builder()
+			.username(username)
+			.password(password)
+			.roles(List.of(UserRole.valueOf(role)))
+			.build();
+	}
 }

@@ -9,3 +9,5 @@ spring:
     database: postgresql
     hibernate:
       ddl-auto: update
+  jwt:
+    secret: vmfhaltmskdlstkfkdgodyroqkfwkdbalroqkfwkdbalaaaaaaaaaaaaaaaabbbbb
