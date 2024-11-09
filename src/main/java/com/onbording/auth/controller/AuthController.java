@@ -1,18 +1,15 @@
 package com.onbording.auth.controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.onbording.auth.entity.dto.request.RefreshToeknRequestDto;
 import com.onbording.auth.entity.dto.request.RefreshTokenRequestDto;
 import com.onbording.auth.entity.dto.request.SignRequestDto;
 import com.onbording.auth.entity.dto.request.SignUpRequestDto;
 import com.onbording.auth.entity.dto.response.SignUpResponseDto;
 import com.onbording.auth.entity.dto.response.TokenResponseDto;
-import com.onbording.auth.jwt.JWTUtil;
 import com.onbording.auth.service.AuthService;
 
 import jakarta.validation.Valid;
